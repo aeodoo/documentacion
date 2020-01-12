@@ -1,0 +1,5 @@
+.. _archivo-de-configuracion:
+
+########################
+Archivo de Configuración
+########################

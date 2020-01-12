@@ -1,0 +1,10 @@
+.. _acciones-de-cliente:
+
+###################
+Acciones de Cliente
+###################
+
+###################
+Acciones de Informe
+###################
+

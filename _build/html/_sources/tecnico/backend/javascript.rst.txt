@@ -1,0 +1,5 @@
+.. _javascript:
+
+##########
+JavaScript
+##########

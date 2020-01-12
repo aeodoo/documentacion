@@ -1,0 +1,5 @@
+.. _acciones-de-ventana:
+
+###################
+Acciones de ventana
+###################
