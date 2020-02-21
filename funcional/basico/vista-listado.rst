@@ -1,5 +1,6 @@
-.. _vista-listado:
+.. _header-n2:
 
-#############
 Vista Listado
-#############
+=============
+
+Prueba vista listado
