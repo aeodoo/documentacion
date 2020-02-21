@@ -21,7 +21,7 @@ Puedes encontrar el índice completo de la documentación en el siguiente enlace
 
 Esta documentación esta supervisada por la Asociación Españolda de Odoo, pero
 confeccionada por la comunidad. Puedes completar, mejorar y corregir la documentación
-proponiéndo nuevos cambios mediante Github, para ello, debes tener en cuenta
+proponiendo nuevos cambios mediante Github, para ello, debes tener en cuenta
 algunos puntos:
 
 ### Documentación mediante ReStructureText
