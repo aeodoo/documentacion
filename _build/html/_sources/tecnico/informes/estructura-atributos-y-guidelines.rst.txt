@@ -1,5 +1,0 @@
-.. _estructura y atributos:
-
-######################
-Estructura y Atributos
-######################

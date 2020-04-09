@@ -1,5 +1,0 @@
-.. _archivo-de-manifiesto:
-
-#####################
-Archivo de manifiesto
-#####################

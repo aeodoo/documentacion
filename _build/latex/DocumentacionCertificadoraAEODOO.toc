@@ -1,0 +1,164 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Parte Funcional}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Comunnicaci\IeC {\'o}n Interna}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Acciones Panificadas}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Exportaci\IeC {\'o}n de Datos}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Vista Listado}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Vista Pivot}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Clientes}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Productos}{3}{section.1.7}
+\contentsline {section}{\numberline {1.8}Iniciativas}{3}{section.1.8}
+\contentsline {section}{\numberline {1.9}Productos}{4}{section.1.9}
+\contentsline {section}{\numberline {1.10}Tarifa de Ventas}{4}{section.1.10}
+\contentsline {section}{\numberline {1.11}Comisiones}{4}{section.1.11}
+\contentsline {section}{\numberline {1.12}Almacenes y Ubicaciones}{4}{section.1.12}
+\contentsline {section}{\numberline {1.13}Entrada de Mercanc\IeC {\'\i }a}{4}{section.1.13}
+\contentsline {section}{\numberline {1.14}Salida de Mercanc\IeC {\'\i }a}{4}{section.1.14}
+\contentsline {section}{\numberline {1.15}Movimientos Internos}{4}{section.1.15}
+\contentsline {section}{\numberline {1.16}Inventario}{4}{section.1.16}
+\contentsline {section}{\numberline {1.17}Lista de Materiales}{4}{section.1.17}
+\contentsline {section}{\numberline {1.18}Ordenes de Fabricaci\IeC {\'o}n}{4}{section.1.18}
+\contentsline {section}{\numberline {1.19}Eventos}{4}{section.1.19}
+\contentsline {section}{\numberline {1.20}Tareas}{4}{section.1.20}
+\contentsline {section}{\numberline {1.21}Importaci\IeC {\'o}n de Productos por Proveedor}{5}{section.1.21}
+\contentsline {section}{\numberline {1.22}Reglas de Reabastecimiento}{5}{section.1.22}
+\contentsline {section}{\numberline {1.23}Pedido de Compra}{5}{section.1.23}
+\contentsline {section}{\numberline {1.24}Facturas de Clientes}{5}{section.1.24}
+\contentsline {section}{\numberline {1.25}Cobros}{5}{section.1.25}
+\contentsline {section}{\numberline {1.26}Facturas de Proveedores}{5}{section.1.26}
+\contentsline {section}{\numberline {1.27}Pagos}{5}{section.1.27}
+\contentsline {section}{\numberline {1.28}Plan General Contable}{5}{section.1.28}
+\contentsline {section}{\numberline {1.29}Diarios}{5}{section.1.29}
+\contentsline {section}{\numberline {1.30}Extractos Bancarios}{5}{section.1.30}
+\contentsline {chapter}{\numberline {2}Parte T\IeC {\'e}cnica}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Python}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}XML}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}GitHub}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Linux}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Intalaci\IeC {\'o}n desde Github}{8}{section.2.5}
+\contentsline {section}{\numberline {2.6}Archivo de Configuraci\IeC {\'o}n}{8}{section.2.6}
+\contentsline {section}{\numberline {2.7}Comandos B\IeC {\'a}sicos}{8}{section.2.7}
+\contentsline {section}{\numberline {2.8}Actualizaci\IeC {\'o}n y control de Versiones}{8}{section.2.8}
+\contentsline {section}{\numberline {2.9}Repositorios}{8}{section.2.9}
+\contentsline {section}{\numberline {2.10}Archivo de manifiesto}{8}{section.2.10}
+\contentsline {section}{\numberline {2.11}Estrcutura de Archivos}{8}{section.2.11}
+\contentsline {section}{\numberline {2.12}Modelos}{10}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Tipos de modelos}{10}{subsection.2.12.1}
+\contentsline {subsection}{\numberline {2.12.2}Componentes de un modelo}{10}{subsection.2.12.2}
+\contentsline {subsection}{\numberline {2.12.3}Herencia}{10}{subsection.2.12.3}
+\contentsline {subsection}{\numberline {2.12.4}Herencia por delegaci\IeC {\'o}n}{10}{subsection.2.12.4}
+\contentsline {section}{\numberline {2.13}Campos}{10}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Sintaxis}{10}{subsection.2.13.1}
+\contentsline {subsection}{\numberline {2.13.2}Tipos}{10}{subsection.2.13.2}
+\contentsline {subsection}{\numberline {2.13.3}Atributos}{10}{subsection.2.13.3}
+\contentsline {subsection}{\numberline {2.13.4}Campos Autom\IeC {\'a}ticos}{10}{subsection.2.13.4}
+\contentsline {subsection}{\numberline {2.13.5}Campos Reservados}{10}{subsection.2.13.5}
+\contentsline {subsection}{\numberline {2.13.6}Campos Calculados}{10}{subsection.2.13.6}
+\contentsline {subsection}{\numberline {2.13.7}Herencia y definiciones incrementales}{10}{subsection.2.13.7}
+\contentsline {section}{\numberline {2.14}M\IeC {\'e}todos}{10}{section.2.14}
+\contentsline {subsection}{\numberline {2.14.1}Estructura y Sintaxis}{10}{subsection.2.14.1}
+\contentsline {subsection}{\numberline {2.14.2}Enviroment}{10}{subsection.2.14.2}
+\contentsline {subsection}{\numberline {2.14.3}Recordset}{10}{subsection.2.14.3}
+\contentsline {subsection}{\numberline {2.14.4}Contexto}{10}{subsection.2.14.4}
+\contentsline {subsection}{\numberline {2.14.5}Decoradores}{10}{subsection.2.14.5}
+\contentsline {subsection}{\numberline {2.14.6}Actions Methods}{10}{subsection.2.14.6}
+\contentsline {subsection}{\numberline {2.14.7}Business Methods}{10}{subsection.2.14.7}
+\contentsline {subsection}{\numberline {2.14.8}Contrains and Onchanges}{10}{subsection.2.14.8}
+\contentsline {subsection}{\numberline {2.14.9}Herencia}{10}{subsection.2.14.9}
+\contentsline {subsection}{\numberline {2.14.10}Default y Gets}{10}{subsection.2.14.10}
+\contentsline {subsection}{\numberline {2.14.11}ORM Overrides}{10}{subsection.2.14.11}
+\contentsline {subsection}{\numberline {2.14.12}Compute and Search}{10}{subsection.2.14.12}
+\contentsline {subsection}{\numberline {2.14.13}Operaciones Frecuentes}{10}{subsection.2.14.13}
+\contentsline {subsubsection}{Create}{10}{subsubsection*.3}
+\contentsline {subsubsection}{Write}{10}{subsubsection*.4}
+\contentsline {subsubsection}{Recordset}{10}{subsubsection*.5}
+\contentsline {subsubsection}{Unlink}{10}{subsubsection*.6}
+\contentsline {subsubsection}{Search}{10}{subsubsection*.7}
+\contentsline {subsubsection}{Browse}{10}{subsubsection*.8}
+\contentsline {subsubsection}{Update}{10}{subsubsection*.9}
+\contentsline {section}{\numberline {2.15}Manejo de Errores}{10}{section.2.15}
+\contentsline {subsection}{\numberline {2.15.1}UserError}{10}{subsection.2.15.1}
+\contentsline {subsection}{\numberline {2.15.2}ValidationError}{10}{subsection.2.15.2}
+\contentsline {subsection}{\numberline {2.15.3}AccessDenied}{10}{subsection.2.15.3}
+\contentsline {subsection}{\numberline {2.15.4}AccessError}{10}{subsection.2.15.4}
+\contentsline {subsection}{\numberline {2.15.5}CacheMiss}{10}{subsection.2.15.5}
+\contentsline {subsection}{\numberline {2.15.6}MissingError}{10}{subsection.2.15.6}
+\contentsline {subsection}{\numberline {2.15.7}RedirectWarning}{10}{subsection.2.15.7}
+\contentsline {section}{\numberline {2.16}Estrcutura XML}{11}{section.2.16}
+\contentsline {section}{\numberline {2.17}Abreviaturas}{11}{section.2.17}
+\contentsline {section}{\numberline {2.18}CSV}{11}{section.2.18}
+\contentsline {section}{\numberline {2.19}Operaciones}{11}{section.2.19}
+\contentsline {section}{\numberline {2.20}Estructura y sintaxis}{12}{section.2.20}
+\contentsline {subsection}{\numberline {2.20.1}Cabecera y atributos}{12}{subsection.2.20.1}
+\contentsline {subsection}{\numberline {2.20.2}Domains}{12}{subsection.2.20.2}
+\contentsline {subsection}{\numberline {2.20.3}Filtros}{12}{subsection.2.20.3}
+\contentsline {subsection}{\numberline {2.20.4}Uso de Contexto}{12}{subsection.2.20.4}
+\contentsline {subsection}{\numberline {2.20.5}Estilos CSS}{12}{subsection.2.20.5}
+\contentsline {subsection}{\numberline {2.20.6}Botones}{12}{subsection.2.20.6}
+\contentsline {subsection}{\numberline {2.20.7}Widgets}{12}{subsection.2.20.7}
+\contentsline {section}{\numberline {2.21}Tipos de Vistas}{12}{section.2.21}
+\contentsline {subsection}{\numberline {2.21.1}Vista Lista}{12}{subsection.2.21.1}
+\contentsline {subsection}{\numberline {2.21.2}Vista Search}{12}{subsection.2.21.2}
+\contentsline {subsection}{\numberline {2.21.3}Vista Formulario}{12}{subsection.2.21.3}
+\contentsline {subsection}{\numberline {2.21.4}Vista Kanban}{12}{subsection.2.21.4}
+\contentsline {subsection}{\numberline {2.21.5}Vista Calendario}{12}{subsection.2.21.5}
+\contentsline {subsection}{\numberline {2.21.6}Vista Gr\IeC {\'a}fica y Pivot}{12}{subsection.2.21.6}
+\contentsline {subsection}{\numberline {2.21.7}Vista Dashboard}{12}{subsection.2.21.7}
+\contentsline {subsection}{\numberline {2.21.8}Vista Cohort}{12}{subsection.2.21.8}
+\contentsline {subsection}{\numberline {2.21.9}Vista Activity}{12}{subsection.2.21.9}
+\contentsline {subsection}{\numberline {2.21.10}Vista Qweb}{12}{subsection.2.21.10}
+\contentsline {section}{\numberline {2.22}Vistas Embebidas}{12}{section.2.22}
+\contentsline {section}{\numberline {2.23}Herencia de Vistas}{12}{section.2.23}
+\contentsline {section}{\numberline {2.24}Dominios XML}{13}{section.2.24}
+\contentsline {section}{\numberline {2.25}Notaci\IeC {\'o}n Polaca}{13}{section.2.25}
+\contentsline {section}{\numberline {2.26}Dominios en Python}{13}{section.2.26}
+\contentsline {section}{\numberline {2.27}Dominios Din\IeC {\'a}micos}{13}{section.2.27}
+\contentsline {section}{\numberline {2.28}Sintaxis y Atributos}{13}{section.2.28}
+\contentsline {section}{\numberline {2.29}Acciones de Cliente}{13}{section.2.29}
+\contentsline {section}{\numberline {2.30}Acciones de Informe}{13}{section.2.30}
+\contentsline {section}{\numberline {2.31}Acciones de Servidores}{13}{section.2.31}
+\contentsline {section}{\numberline {2.32}Acciones de url}{13}{section.2.32}
+\contentsline {section}{\numberline {2.33}Acciones de ventana}{13}{section.2.33}
+\contentsline {section}{\numberline {2.34}Acciones Planificadas}{13}{section.2.34}
+\contentsline {section}{\numberline {2.35}Grupos}{13}{section.2.35}
+\contentsline {section}{\numberline {2.36}Control de Acceso}{13}{section.2.36}
+\contentsline {section}{\numberline {2.37}Acceso a Campos}{13}{section.2.37}
+\contentsline {section}{\numberline {2.38}Reglas de registro}{13}{section.2.38}
+\contentsline {section}{\numberline {2.39}Wizards}{14}{section.2.39}
+\contentsline {section}{\numberline {2.40}Internacionalizaci\IeC {\'o}n}{14}{section.2.40}
+\contentsline {section}{\numberline {2.41}Estructura y Atributos}{14}{section.2.41}
+\contentsline {section}{\numberline {2.42}Papel}{14}{section.2.42}
+\contentsline {section}{\numberline {2.43}Estilos}{14}{section.2.43}
+\contentsline {section}{\numberline {2.44}Templates}{14}{section.2.44}
+\contentsline {section}{\numberline {2.45}Tipografia}{14}{section.2.45}
+\contentsline {section}{\numberline {2.46}get\_report\_values}{14}{section.2.46}
+\contentsline {section}{\numberline {2.47}Logger y log level}{14}{section.2.47}
+\contentsline {section}{\numberline {2.48}wdb}{14}{section.2.48}
+\contentsline {section}{\numberline {2.49}pubd}{14}{section.2.49}
+\contentsline {section}{\numberline {2.50}ptvsd}{14}{section.2.50}
+\contentsline {section}{\numberline {2.51}Tests de Python}{15}{section.2.51}
+\contentsline {section}{\numberline {2.52}Tests de Javascript}{15}{section.2.52}
+\contentsline {section}{\numberline {2.53}Tests de Integraci\IeC {\'o}n}{15}{section.2.53}
+\contentsline {section}{\numberline {2.54}Travis}{15}{section.2.54}
+\contentsline {section}{\numberline {2.55}Coverage}{15}{section.2.55}
+\contentsline {section}{\numberline {2.56}Black y pre-commit}{15}{section.2.56}
+\contentsline {section}{\numberline {2.57}Base de Datos}{15}{section.2.57}
+\contentsline {section}{\numberline {2.58}OpenUpgrade}{15}{section.2.58}
+\contentsline {section}{\numberline {2.59}Odoo Profile}{15}{section.2.59}
+\contentsline {section}{\numberline {2.60}Pyflame flamgraph}{15}{section.2.60}
+\contentsline {section}{\numberline {2.61}pgbadger}{15}{section.2.61}
+\contentsline {section}{\numberline {2.62}JavaScript}{15}{section.2.62}
+\contentsline {section}{\numberline {2.63}JS Widgets}{15}{section.2.63}
+\contentsline {section}{\numberline {2.64}Templates}{15}{section.2.64}
+\contentsline {section}{\numberline {2.65}Helpers}{16}{section.2.65}
+\contentsline {section}{\numberline {2.66}Frontend}{16}{section.2.66}
+\contentsline {section}{\numberline {2.67}Mail Thread}{16}{section.2.67}
+\contentsline {section}{\numberline {2.68}Mail Alias Mixin}{16}{section.2.68}
+\contentsline {section}{\numberline {2.69}Mail Activity Mixin}{16}{section.2.69}
+\contentsline {section}{\numberline {2.70}Portal Mixin}{16}{section.2.70}
+\contentsline {section}{\numberline {2.71}UTM Mixin}{16}{section.2.71}
+\contentsline {section}{\numberline {2.72}Website Published}{16}{section.2.72}
+\contentsline {section}{\numberline {2.73}Rating Mixin}{16}{section.2.73}
+\contentsline {section}{\numberline {2.74}Website SEO Metada}{16}{section.2.74}
+\contentsline {section}{\numberline {2.75}Website Multi}{16}{section.2.75}
+\contentsline {section}{\numberline {2.76}Website Published Multi}{16}{section.2.76}

@@ -1,5 +1,0 @@
-.. _notacion-polaca:
-
-###############
-Notación Polaca
-###############

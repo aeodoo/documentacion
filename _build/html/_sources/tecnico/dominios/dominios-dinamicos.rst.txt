@@ -1,5 +1,0 @@
-.. _dominios-dinamicos:
-
-##################
-Dominios Dinámicos
-##################

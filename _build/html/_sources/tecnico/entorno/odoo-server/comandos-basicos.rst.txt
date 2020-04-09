@@ -1,5 +1,0 @@
-.. _comandos-basicos:
-
-################
-Comandos Básicos
-################

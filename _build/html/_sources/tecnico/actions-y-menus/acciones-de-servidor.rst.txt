@@ -1,5 +1,0 @@
-.. _acciones-de-servidor:
-
-######################
-Acciones de Servidores
-######################

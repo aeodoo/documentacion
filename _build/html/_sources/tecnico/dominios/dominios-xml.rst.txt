@@ -1,5 +1,0 @@
-.. _dominios-xml:
-
-############
-Dominios XML
-############

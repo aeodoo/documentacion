@@ -117,20 +117,84 @@
             
   <div class="section" id="campos">
 <span id="id1"></span><h1>Campos<a class="headerlink" href="#campos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Los campos son importados mediante la clase fields. Con ellos podemos incorporar a nuestro modelo la estructura de datos y ciertos atributos sobre los mismos (requerido, etiqueta en vistas, etc.)</p>
 <div class="section" id="sintaxis">
-<h2>Sintaxis<a class="headerlink" href="#sintaxis" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="sintaxis-campos"></span><h2>Sintaxis<a class="headerlink" href="#sintaxis" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los campos se definen después de los atributos indicando el nombre del campo con la siguiente sintaxis</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">field_name</span> <span class="p">:</span> <span class="n">fields</span><span class="o">.</span><span class="n">Type</span><span class="p">(</span><span class="n">Atributes</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Modificando Type  y Atributes  por el tipo y los atributos correspondientes al campo.</p>
 </div>
 <div class="section" id="tipos">
-<h2>Tipos<a class="headerlink" href="#tipos" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="tipos-campos"></span><h2>Tipos<a class="headerlink" href="#tipos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los tipos de campos de los que disponemos gracias al ORM son:</p>
+<ul class="simple">
+<li>Char:</li>
+<li>Boolean:</li>
+<li>Float:</li>
+<li>Integer:</li>
+<li>Binary:</li>
+<li>Html:</li>
+<li>Image:</li>
+<li>Monetary:</li>
+<li>Selection:</li>
+<li>Text:</li>
+<li>Date:</li>
+<li>Datetime:</li>
+<li>Many2one:</li>
+<li>One2many:</li>
+<li>Many2many:</li>
+<li>Reference:</li>
+<li>Many2oneReference:</li>
+</ul>
 </div>
 <div class="section" id="atributos">
-<h2>Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="atributos-campos"></span><h2>Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los atributos disponibles para los campos son:</p>
+<ul class="simple">
+<li>string</li>
+<li>help</li>
+<li>readonly</li>
+<li>required</li>
+<li>index</li>
+<li>default</li>
+<li>states</li>
+<li>groups</li>
+<li>company_dependent</li>
+<li>copy</li>
+<li>store</li>
+<li>group_operator</li>
+<li>compute</li>
+<li>compute_sudo</li>
+<li>inverse</li>
+<li>search</li>
+<li>related</li>
+<li>Otros atributos dependientes del tipo de campo</li>
+</ul>
 </div>
 <div class="section" id="campos-automaticos">
-<h2>Campos Automáticos<a class="headerlink" href="#campos-automaticos" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="id2"></span><h2>Campos Automáticos<a class="headerlink" href="#campos-automaticos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Al inicializar cualquier modelo el ORM automáticamente nos creará ciertos campos básicos para el modelo registrado:
+id</p>
+<ul class="simple">
+<li>create_date</li>
+<li>create_uid</li>
+<li>write_date</li>
+<li>write_uid</li>
+</ul>
 </div>
 <div class="section" id="campos-reservados">
-<h2>Campos Reservados<a class="headerlink" href="#campos-reservados" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="id3"></span><h2>Campos Reservados<a class="headerlink" href="#campos-reservados" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Alguno campos, si bien no son creados automáticamente por el ORM, tienen un nombre con un significado especial que los provee de ciertas funcionalidades, que podremos incorporar al modelo simplemente definiendo el campo:</p>
+<ul class="simple">
+<li>name:</li>
+<li>active:</li>
+<li>state:</li>
+<li>parent_id:</li>
+<li>parent_path:</li>
+<li>company_id:</li>
+</ul>
 </div>
 <div class="section" id="campos-calculados">
 <h2>Campos Calculados<a class="headerlink" href="#campos-calculados" title="Enlazar permanentemente con este título">¶</a></h2>

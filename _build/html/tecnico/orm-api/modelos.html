@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Modelos &#8212; documentación de Documentacion Certificadora AEODOO - </title>
+    <title>Tipos de modelos &#8212; documentación de Documentacion Certificadora AEODOO - </title>
     <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -27,7 +27,7 @@
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
     <link rel="next" title="Campos" href="campos.html" />
-    <link rel="prev" title="Archivo de manifiesto" href="../entorno/estructura-modulo.html" />
+    <link rel="prev" title="Introducción" href="introduccion.html" />
   
    
 
@@ -42,7 +42,7 @@
           <a href="campos.html" title="Campos"
              accesskey="N">siguiente</a> |</li>
         <li class="right" >
-          <a href="../entorno/estructura-modulo.html" title="Archivo de manifiesto"
+          <a href="introduccion.html" title="Introducción"
              accesskey="P">anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">documentación de Documentacion Certificadora AEODOO - </a> &#187;</li> 
       </ul>
@@ -59,21 +59,22 @@
     <h2>Contenidos</h2>
     <div class="sidebar-localtoc">
       <ul>
-<li><a class="reference internal" href="#">Modelos</a><ul>
-<li><a class="reference internal" href="#tipos-de-modelos">Tipos de modelos</a></li>
-<li><a class="reference internal" href="#componentes-de-un-modelo">Componentes de un modelo</a></li>
-<li><a class="reference internal" href="#herencia">Herencia</a></li>
-<li><a class="reference internal" href="#herencia-por-delegacion">Herencia por delegación</a></li>
+<li><a class="reference internal" href="#">Tipos de modelos</a></li>
+<li><a class="reference internal" href="#componentes-de-un-modelo">Componentes de un modelo</a><ul>
+<li><a class="reference internal" href="#atributos">Atributos</a></li>
+<li><a class="reference internal" href="#campos">Campos</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#herencia">Herencia</a></li>
+<li><a class="reference internal" href="#herencia-por-delegacion">Herencia por delegación</a></li>
 </ul>
 
     </div>
   </div>
 </div>
   <h4>Tema anterior</h4>
-  <p class="topless"><a href="../entorno/estructura-modulo.html"
-                        title="capítulo anterior">Archivo de manifiesto</a></p>
+  <p class="topless"><a href="introduccion.html"
+                        title="capítulo anterior">Introducción</a></p>
   <h4>Próximo tema</h4>
   <p class="topless"><a href="campos.html"
                         title="próximo capítulo">Campos</a></p>
@@ -106,26 +107,166 @@
             <ol class="breadcrumb">
               <li><a href="../../index.html">Docs</a></li>
               
-              <li>Modelos</li>
+              <li>Tipos de modelos</li>
             </ol>
           </div>
           
           <div class="document clearer body">
             
-  <div class="section" id="modelos">
-<span id="id1"></span><h1>Modelos<a class="headerlink" href="#modelos" title="Enlazar permanentemente con este título">¶</a></h1>
+  <p id="modelos">#Modelos</p>
+<p>Los modelos describen las estructuras de datos utilizadas en Odoo. Gracias a la importación de la clases de python “models” y “fields” definidas en el propio ORM podremos utilizar todas las funcionalidades desarrolladas en el core de Odoo.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">odoo</span> <span class="kn">import</span> <span class="n">models</span><span class="p">,</span> <span class="n">fields</span>
+</pre></div>
+</div>
+<p>Cada modelo creará una instancia automáticamente en base de datos, estas instancias representan los modelos disponibles y dependen de los módulos instalados. Cada instancia de un modelo es una conjunto de registros, una tabla en la base de datos con los registros ordenados, el propio ORM nos ofrece métodos como search() o browse() para recuperar los registros de un modelo concreto.</p>
+<p>Los modelos se definen como clases de Python, con la cabecera, atributos del modelo con el prefijo “_”, campos y funciones en una estructura como sigue:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ModelName</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+        <span class="n">_name</span> <span class="o">=</span> <span class="s1">&#39;model.name&#39;</span>
+
+        <span class="n">field1</span> <span class="o">=</span> <span class="n">fields</span><span class="o">.</span><span class="n">Char</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>La estructura completa de un modelo utilizando las guías oficiales de estilo de la OCA queda:</p>
+<ol class="arabic simple">
+<li><strong>Cabecera</strong></li>
+<li><strong>Atributos</strong> privados (_name, _inherit, etc.)</li>
+<li><strong>Métodos</strong> Default y _default_get</li>
+<li>Declaraciones de <strong>campos</strong> (field = …)</li>
+<li><strong>Métodos</strong> compute y search en el mismo orden que sus campos correspondientes</li>
+<li><strong>Métodos</strong> constrains (&#64;api.constrains) y onchange (&#64;api.onchange)</li>
+<li><strong>Métodos</strong> CRUD (sobreescritura de métodos básicos del ORM)</li>
+<li><strong>Métodos</strong> Action</li>
+<li><strong>Métodos</strong> propios del modelo de negocio</li>
+</ol>
 <div class="section" id="tipos-de-modelos">
-<h2>Tipos de modelos<a class="headerlink" href="#tipos-de-modelos" title="Enlazar permanentemente con este título">¶</a></h2>
+<h1>Tipos de modelos<a class="headerlink" href="#tipos-de-modelos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Podemos diferenciar tres tipos principales de modelos en función de su cometido:</p>
+<p><strong>Model</strong>: Son los modelos para los datos persistentes en base de datos. Es utilizado para la gran mayoría de modelos creados en el sistema, se representan como tablas en la base de datos.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ModelName</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+</pre></div>
+</div>
+<p><strong>TransientModel</strong>: Modelos con datos temporales, se guardan en base de datos pero son limpiados periódicamente. Son utilizados para modelos temporales que no guardan históricos de registros, por ejemplo para asistentes. También se representan como tablas en la base de datos, aunque los registros de la tabla son eliminados por el propio ORM periódicamente.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ModelName</span><span class="p">(</span><span class="n">TransientModel</span><span class="p">):</span>
+</pre></div>
+</div>
+<p><strong>AbstracModel</strong>: Modelos que definen una estructura y métodos creados para ser incorporados mediante herencia en otros modelos añadiendole funcionalidades a modo de plantilla. Al revés que los tipos anteriores, no se reprensentan como tablas en la base de datos, sin embargo, cuando son heredados por otros tipos de modelo, añaden su estructura y funcionalidades al modelo (y su correspondiente tabla) que lo hereda.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ModelName</span><span class="p">(</span><span class="n">AbstractModel</span><span class="p">):</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="componentes-de-un-modelo">
-<h2>Componentes de un modelo<a class="headerlink" href="#componentes-de-un-modelo" title="Enlazar permanentemente con este título">¶</a></h2>
+<h1>Componentes de un modelo<a class="headerlink" href="#componentes-de-un-modelo" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="atributos">
+<h2>Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los atributos son definidos a continuación del encabezado y si bien la mayoría de ellos son opcionales, ya que usan valores por defecto definidos en propio ORM, permiten modificar ciertos comportamientos del modelo.</p>
+<p>Atributos utilizados frecuentemente:</p>
+<ul class="simple">
+<li>_name</li>
+<li>_description</li>
+<li>_order</li>
+<li>_inherit</li>
+</ul>
+<p>Atributos utilizados ocasionalmente:</p>
+<ul class="simple">
+<li>_inherits</li>
+<li>_rec_name</li>
+</ul>
+<p>Atributos extraordinariamente utilizados:</p>
+<ul class="simple">
+<li>_sequence</li>
+<li><dl class="first docutils">
+<dt>_name:</dt>
+<dd>Define el nombre del modelo, es un atributo obligatorio que sirve como identificador único en el sistema.</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_name</span> <span class="o">=</span> <span class="s2">&quot;model.name&quot;</span>
+</pre></div>
+</div>
+<div class="admonition-guidelines admonition">
+<p class="first admonition-title">Guidelines</p>
+<p class="last">Los nombres de los modelos deben ir en minúsculas y, en el caso de llevar varias palabras, separadas por puntos. Utiliza nombres de modelos lo más cortos posible pero suficientemente específicos para comprender su cometido y evitar conflictos con otros modelos.</p>
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>_description:</dt>
+<dd>Atributo opcional para ofrecer una breve descripción del modelo.</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_name</span> <span class="o">=</span> <span class="s2">&quot;Model Short Description&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>_order:</dt>
+<dd>Permite especificar el campo por defecto que se utiliza para ordenar el resultado de una búsqueda de registros en el modelo. Si no especificamos este atributo, Odoo utilizará por defecto el campo «id» para ordenar los registros. Cualquier vista o método de búsqueda que no específique el orden mediante un parámetro propio recuperará los registros por campo especificado en este atributo.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>_inherit:</dt>
+<dd>String o listados de strings que especifica uno o más modelos sobre los que heredamos.</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Truco</p>
+<p class="last">Si se establece el parámetro _name en el nuevo modelo y este no se corresponde con ninguno de los modelos especificados en el inherit, estaremos creando un nuevo modelo que copia las características de los modelos heredados (campos, vistas, métodos…) pero los implementa de modo independiente (los modelos heredados no acceden a estas nuevas características), si embargo, si el atributo _name se corresponde con uno de los modelos especificados en el _inherit, estaremos extendiendo el modelo heredado. Si no se establece el atributo _name, en el inherit debe haber exclusivamente un modelo especificado, del cual el ORM entenderá estamos ampliando (equivalente a poner el _name con el nombre del modelo heredado). Para más detalle, ver herencia #TODO: link a herencia</p>
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>_inherits:</dt>
+<dd>Utilizado para la herencia por delegación #TODO: link a herencia por delegación</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>_sequence:</dt>
+<dd>Parámetro opcional y muy raramente utilizado que sirve para especificar que secuencia de postgres se debe utilizar para autonumerar el campo ID de la base de datos. La secuencia por lo general se creará de modo automático siguiente un patrón de «nombre_modelo_id_seq».</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>_rec_name:</dt>
+<dd>El ORM a la hora de mostrar registros establece el campo “name” como prioritario para identificar al registro en cuestión. Mediante este parámetro podríamos modificar el comportamiento para especificar otro campo como etiqueta de registro (por ejemplo al seleccionar una registro en un campo relacional de un formulario).</dd>
+</dl>
+</li>
+</ul>
+<ul class="simple">
+<li>_check_company_auto:</li>
+<li>_parent_name:</li>
+<li>_parent_store:</li>
+<li>_abstract:</li>
+<li>_transient:</li>
+<li>_date_name:</li>
+<li>_fold_name:</li>
+<li><dl class="first docutils">
+<dt>_auto:</dt>
+<dd>Parámetro para específicar si debe crear automáticamente una tabla en la base de datos para el modelo. Por defecto su valor ser True, si se establece a False se debe reescribir el método init() del modelo para especificar como inicializarlo.</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Para la inmensa mayoría de casos, cuando no queremos que se inicialice en base de datos un modelo utilizaremos la clase AbstractModel para crearlo.</p>
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>_table:</dt>
+<dd>Parámetro opcional que permite especificar el nombre de la tabla guardad en la base de datos. Por defecto tomara el valor del nombre del modelo sustituyendo los puntos por guiones bajos.</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="campos">
+<h2>Campos<a class="headerlink" href="#campos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los campos definen la estructura del modelo, de tal modo que dan forma a la tabla que el ORM creará en la base de datos.</p>
+<p>Para más detalle: <a class="reference internal" href="campos.html#campos"><span class="std std-ref">sintaxis</span></a>.</p>
+</div>
 </div>
 <div class="section" id="herencia">
-<h2>Herencia<a class="headerlink" href="#herencia" title="Enlazar permanentemente con este título">¶</a></h2>
+<h1>Herencia<a class="headerlink" href="#herencia" title="Enlazar permanentemente con este título">¶</a></h1>
 </div>
 <div class="section" id="herencia-por-delegacion">
-<h2>Herencia por delegación<a class="headerlink" href="#herencia-por-delegacion" title="Enlazar permanentemente con este título">¶</a></h2>
-</div>
+<h1>Herencia por delegación<a class="headerlink" href="#herencia-por-delegacion" title="Enlazar permanentemente con este título">¶</a></h1>
 </div>
 
 
@@ -134,7 +275,7 @@
   <div class="footer-relations">
     
       <div class="pull-left">
-        <a class="btn btn-default" href="../entorno/estructura-modulo.html" title="capítulo anterior (use the left arrow)">Archivo de manifiesto</a>
+        <a class="btn btn-default" href="introduccion.html" title="capítulo anterior (use the left arrow)">Introducción</a>
       </div>
     
       <div class="pull-right">
@@ -156,7 +297,7 @@
           <a href="campos.html" title="Campos"
              >siguiente</a> |</li>
         <li class="right" >
-          <a href="../entorno/estructura-modulo.html" title="Archivo de manifiesto"
+          <a href="introduccion.html" title="Introducción"
              >anterior</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">documentación de Documentacion Certificadora AEODOO - </a> &#187;</li> 
       </ul>

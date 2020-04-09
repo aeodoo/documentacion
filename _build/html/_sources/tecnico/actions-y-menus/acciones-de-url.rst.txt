@@ -1,5 +1,0 @@
-.. _acciones-de-url:
-
-###############
-Acciones de url
-###############
