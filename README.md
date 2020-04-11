@@ -28,6 +28,7 @@ proponiendo nuevos cambios mediante Github, para ello, es necesario:
 
 * [Una cuenta en Github](#creacion-de-cuenta-en-github)
 * Modificar las fuentes:
+
 	1- Desde el propio Github
 
 	Es posible [modificar los contenidos desde la propia web de Github](#proceso-colaboracion-desde-tu-equipo), aunque
@@ -87,13 +88,38 @@ Puedes usar, modificar y compartir este trabajo con la única condición de hace
 
 Si aún no tienes una cuenta en Github, deberás acceder a Github.com y seguir los siguientes pasos:
 
-![](readme_images/creacion_cuenta_github.gif)
+1.- Accede a Github.com y pulsa en el botón "Sign Up"
+
+2.- Introduce tu nuevo nombre de usuario, mail y contraseña
+
+3.- Sigue los pasos indicados por el asistente
+
+4.- Welcome to Github :)
+
+![](readme_images/creacion-cuenta-github.gif)
 
 ### Proceso colaboración desde GitHub
 
+1.- Accede a la página de la documentación en el [repositorio](https://github.com/aeodoo/documentacion) que quieras editar:
+
+![](readme_images/paso1-edicion-github.gif)
+
+2.- Utiliza el icono del lápiz para activar el modo edición y modifica el contenido a conveniencia, a continuación guarda y
+directamente crea el Pull Request desde la propia página, primero te hará confirmar los cambios y después confirmar el Pull Request
+contra el repositorio original de la documentación:
+
+![](readme_images/editar-y-crear-pr-github.gif)
+
+
 ### Proceso colaboración desde tu equipo
 
+#### Linux
+
+#### Windows
+
 ### Modificar Pull Request activo
+
+
 
 ### Añadir nuevos archivos rst
 
